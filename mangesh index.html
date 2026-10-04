@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Prasthanam Foundation - Free Live Classes, Study 
+Material, Handwritten Notes, Weekly Mock Tests, Major Tests and Results.">
+िश ा की नई िदशा</ <title>Prasthanam Foundation | title>
+<style>
+:root{
+  --primary:#173b8f;
+  --secondary:#0b72c9;
+  --accent:#ffb703;
+  --dark:#10213f;
+  --light:#f5f8ff;
+  --white:#fff;
+  --text:#26344d;
+  --shadow:0 12px 35px rgba(16,33,63,.12);
+}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  font-family:Arial,"Noto Sans Devanagari",sans-serif;
+  color:var(--text);
+  background:#fff;
+  line-height:1.6;
+}
+a{
+  text-decoration:none;
+  color:inherit;
+}
+.container{
+  width:min(1120px,92%);
+  margin:auto;
+}
+/* TOP BAR */
+.topbar{
+  background:var(--dark);
+  color:#fff;
+  font-size:14px;
+  padding:8px 0;
+}
+.topbar .container{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+}
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:#fff;
+  box-shadow:0 3px 18px rgba(0,0,0,.08);
+}
+.nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.logo-mark{
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  display:grid;
+  place-items:center;
+  color:#fff;
+  font-size:25px;
+  font-weight:800;
+}
+.logo h1{
+  font-size:20px;
+  color:var(--dark);
+}
+.logo small{
+  display:block;
+  color:#68758a;
+  font-size:11px;
+}
+.nav-links{
+  display:flex;
+  gap:22px;
+  align-items:center;
+}
+.nav-links a{
+  font-weight:700;
+  font-size:14px;
+  color:#30405a;
+}
+.nav-links a:hover{
+  color:var(--secondary);
+}
+.menu{
+  display:none;
+  border:0;
+  background:transparent;
+  font-size:28px;
+  cursor:pointer;
+}
+/* HERO */
+.hero{
+  background:linear-gradient(
+    135deg,
+    #102c70 0%,
+    #1769b5 60%,
+    #0c8bc1 100%
+  );
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  width:360px;
+  height:360px;
+  border-radius:50%;
+  background:rgba(255,255,255,.08);
+  right:-100px;
+  top:-110px;
+}
+.hero-inner{
+  min-height:550px;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:40px;
+  align-items:center;
+  position:relative;
+  z-index:1;
+}
+.badge{
+  display:inline-block;
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.25);
+  padding:7px 15px;
+  border-radius:30px;
+  font-weight:700;
+  margin-bottom:18px;
+}
+.hero h2{
+  font-size:clamp(38px,6vw,66px);
+  line-height:1.08;
+  margin-bottom:18px;
+}
+.hero h2 span{
+  color:#ffd166;
+}
+.hero p{
+  font-size:18px;
+  max-width:650px;
+  color:#e8f2ff;
+}
+.buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+.btn{
+  display:inline-block;
+  padding:13px 21px;
+  border-radius:10px;
+  font-weight:800;
+  transition:.2s;
+}
+.btn-primary{
+  background:var(--accent);
+  color:#17233c;
+}
+.btn-primary:hover{
+  transform:translateY(-2px);
+}
+.btn-light{
+  border:1px solid rgba(255,255,255,.4);
+  color:#fff;
+  background:rgba(255,255,255,.08);
+}
+.hero-card{
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:24px;
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+.hero-card h3{
+  font-size:25px;
+  margin-bottom:15px;
+}
+.hero-card li{
+  list-style:none;
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,.16);
+}
+.hero-card li:last-child{
+  border:0;
+}
+/* SECTIONS */
+section{
+  padding:75px 0;
+}
+.section-head{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 42px;
+}
+.section-head .eyebrow{
+  color:var(--secondary);
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size:13px;
+}
+.section-head h2{
+  font-size:36px;
+  color:var(--dark);
+  margin:7px 0 10px;
+}
+.section-head p{
+  color:#69768b;
+}
+/* ABOUT */
+.about{
+  background:var(--light);
+}
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:center;
+}
+.about-box{
+  background:#fff;
+  border-radius:22px;
+  padding:30px;
+  box-shadow:var(--shadow);
+}
+.about-box h3{
+  font-size:26px;
+  color:var(--dark);
+  margin-bottom:12px;
+}
+.checks{
+  margin-top:18px;
+}
+.checks div{
+  padding:9px 0;
+  font-weight:700;
+}
+.checks span{
+  display:inline-grid;
+  place-items:center;
+  width:26px;
+  height:26px;
+  background:#e8f3ff;
+  color:var(--secondary);
+  border-radius:50%;
+  margin-right:8px;
+}
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.card{
+  background:#fff;
+  border:1px solid #e6ebf3;
+  border-radius:18px;
+  padding:25px;
+  box-shadow:0 7px 24px rgba(16,33,63,.06);
+  transition:.25s;
+}
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow);
+}
+.icon{
+  width:50px;
+  height:50px;
+  border-radius:14px;
+  background:#eaf3ff;
+  display:grid;
+  place-items:center;
+  font-size:25px;
+  margin-bottom:15px;
+}
+.card h3{
+  color:var(--dark);
+  margin-bottom:8px;
+}
+.card p{
+  color:#68758a;
+  font-size:14px;
+}
+/* TESTS */
+.tests{
+  background:#f7f9fc;
+}
+.test-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+.test-card{
+  padding:28px;
+  border-radius:20px;
+  background:linear-gradient(135deg,#fff,#f0f6ff);
+  border:1px solid #dfe9f7;
+}
+.test-card h3{
+  font-size:23px;
+  color:var(--dark);
+}
+.test-card p{
+  margin:8px 0 17px;
+  color:#66748a;
+}
+.tag{
+  display:inline-block;
+  background:#e8f2ff;
+  color:var(--secondary);
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:800;
+}
+/* RESULTS */
+.results{
+  background:linear-gradient(135deg,#102c70,#155ba5);
+  color:#fff;
+}
+.results .section-head h2,
+.results .section-head p{
+  color:#fff;
+}
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.stat{
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.18);
+  padding:25px;
+  border-radius:18px;
+  text-align:center;
+}
+.stat strong{
+  display:block;
+  font-size:34px;
+  color:#ffd166;
+}
+.stat span{
+  font-size:14px;
+  color:#e4efff;
+}
+/* CTA */
+.cta{
+  padding:35px;
+  border-radius:25px;
+  background:linear-gradient(135deg,#fff5d6,#fff);
+  border:1px solid #f4df9c;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+.cta h3{
+  font-size:28px;
+  color:var(--dark);
+}
+/* CONTACT */
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+.contact-card{
+  background:#fff;
+  border-radius:20px;
+  border:1px solid #e5eaf1;
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+.contact-item{
+  display:flex;
+  gap:14px;
+  margin:18px 0;
+  align-items:flex-start;
+}
+.contact-icon{
+  width:42px;
+  height:42px;
+  border-radius:11px;
+  background:#eaf3ff;
+  display:grid;
+  place-items:center;
+}
+.contact-item strong{
+  display:block;
+  color:var(--dark);
+}
+/* FOOTER */
+footer{
+  background:#0d1c35;
+  color:#b9c7da;
+  padding:45px 0 20px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.3fr 1fr 1fr;
+  gap:30px;
+}
+footer h3{
+  color:#fff;
+  margin-bottom:12px;
+}
+footer a{
+  display:block;
+  margin:7px 0;
+}
+.copy{
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,.1);
+  margin-top:30px;
+  padding-top:18px;
+  font-size:13px;
+}
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#25d366;
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-size:28px;
+  box-shadow:0 8px 25px rgba(0,0,0,.2);
+  z-index:60;
+}
+/* MOBILE */
+@media(max-width:850px){
+  .hero-inner,
+  .about-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+  .hero-inner{
+    padding:65px 0;
+  }
+  .cards{
+    grid-template-columns:1fr 1fr;
+  }
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+  }
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:76px;
+    left:0;
+    width:100%;
+    background:#fff;
+    padding:18px 5%;
+    flex-direction:column;
+    align-items:flex-start;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+  }
+  .nav-links.show{
+    display:flex;
+  }
+  .menu{
+    display:block;
+  }
+}
+@media(max-width:560px){
+  section{
+    padding:55px 0;
+  }
+  .cards,
+  .test-grid,
+  .stats,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+  .hero h2{
+    font-size:40px;
+  }
+  .hero-card{
+    padding:22px;
+  }
+  .cta{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .topbar .container{
+    justify-content:center;
+    text-align:center;
+  }
+}
+</style>
+</head>
+<body>
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+📍    <span> Faridabad, Molnapur, Azamgarh</span>
+📞    <span> 8756912612</span>
+  </div>
+</div>
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">
+      <div class="logo-mark">
+        P
+      </div>
+      <div>
+        <h1>Prasthanam Foundation</h1>
+िश ा तैयारी सफलता</        <small> • • small>
+      </div>
+    </a>
+    <button
+      class="menu"
+      onclick="toggleMenu()"
+      aria-label="Menu">
+☰      
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#classes">Classes</a>
+      <a href="#tests">Mock Tests</a>
+      <a href="#results">Results</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<!-- MAIN -->
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div>
+      <span class="badge">
+गुणव ापूण िश ा सबके िलए 🎓         
+      </span>
+      <h2>
+        आपकी तैयारी का
+सही  थान</        <span> span>
+      </h2>
+      <p>
+िव ािथयों के िलए        Prasthanam Foundation 
+        Free Live Classes, Study Material,
+        Handwritten Notes, Weekly Mock Tests
+        और उपल कराने का यास है। Major Tests 
+      </p>
+      <div class="buttons">
+        <a
+          class="btn btn-primary"
+          href="#classes">
+          Free Live Classes
+        </a>
+        <a
+          class="btn btn-light"
+          href="#tests">
+देख          Mock Tests 
+        </a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>
+        हमारे साथ ा िमलेगा?
+      </h3>
+      <ul>
+✅        <li> Free Live Classes</li>
+गुणव ापूण 📚        <li> Study Material</li>
+✍        <li> Handwritten Notes</li>
+📝        <li> Weekly Mock Test</li>
+🏆        <li> Major Test & Result</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        About Foundation
+      </div>
+      <h2>
+        Prasthanam Foundation
+      </h2>
+      <p>
+        िव ािथयों को बेहतर तैयारी,
+        िनयिमत अ ास और सही मागदशन देने
+        की िदशा म एक शैि क पहल।
+      </p>
+    </div>
+    <div class="about-grid">
+      <div class="about-box">
+        <h3>
+          हमारा उ े
+        </h3>
+        <p>
+          हमारा उ े िव ािथयों तक उपयोगी
+          शैि क साम ी और िनयिमत टे की
+          सुिवधा प ँचाना है, तािक वे अपनी
+          तैयारी को बेहतर ढंग से समझ और
+          मजबूत कर सक।
+        </p>
+        <div class="checks">
+          <div>
+✓            <span> </span>
+            Free educational resources
+          </div>
+          <div>
+✓            <span> </span>
+            Regular practice & assessment
+          </div>
+          <div>
+✓            <span> </span>
+            Easy-to-understand study support
+          </div>
+        </div>
+      </div>
+      <div class="about-box">
+        <h3>
+          हमारे साथ जुड़
+        </h3>
+        <p>
+म भाग ल,          Free Live Classes 
+और           Study Material Handwritten Notes
+          का उपयोग कर और Weekly Mock Test
+          के मा म से अपनी तैयारी को जाँच।
+        </p>
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="#contact">
+            संपक कर
+          </a>
+          <a
+            class="btn"
+            style="background:#eaf3ff;color:#1265aa"
+            href="tel:8756912612">
+📞             Call Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CLASSES -->
+<section id="classes">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        Learning Resources
+      </div>
+      <h2>
+        िव ािथयों के िलए सुिवधाएँ
+      </h2>
+      <p>
+        एक ही जगह पर पढ़ाई और अ ास से जुड़ी
+        मह पूण सुिवधाएँ।
+      </p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">
+🎥          
+        </div>
+        <h3>
+          Free Live Classes
+        </h3>
+        <p>
+          िव ािथयों के िलए िनःशु Live Classes
+          की सुिवधा।
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">
+📚          
+        </div>
+        <h3>
+          Study Material
+        </h3>
+        <p>
+          िवषयवार अ यन साम ी और उपयोगी
+।          educational resources
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">
+✍          
+        </div>
+        <h3>
+          Handwritten Notes
+        </h3>
+        <p>
+          सरल और व थत । Handwritten Notes
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">
+📝          
+        </div>
+        <h3>
+          Weekly Mock Test
+        </h3>
+        <p>
+          हर स ाह अ ास के िलए । Mock Test
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">
+🏆          
+        </div>
+        <h3>
+          Major Test
+        </h3>
+        <p>
+          मह पूण परी ाओं की तैयारी के
+          िलए । Major Test
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">
+📊          
+        </div>
+        <h3>
+          Results
+        </h3>
+        <p>
+के बाद और           Test Result performance
+          देखने की सुिवधा।
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TESTS -->
+<section class="tests" id="tests">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        Test Series
+      </div>
+      <h2>
+        Mock Test & Major Test
+      </h2>
+      <p>
+        िनयिमत अ ास से अपनी तैयारी की
+         थित को समझ।
+      </p>
+    </div>
+    <div class="test-grid">
+      <div class="test-card">
+        <span class="tag">
+          EVERY WEEK
+        </span>
+        <h3>
+          Weekly Mock Test
+        </h3>
+        <p>
+          सा ािहक टे के मा म से
+          समय बंधन और का अ ास कर। accuracy 
+        </p>
+        <a
+          class="btn btn-primary"
+          href="#">
+जोड़          Test Link 
+        </a>
+      </div>
+      <div class="test-card">
+        <span class="tag">
+          MAJOR EXAM
+        </span>
+        <h3>
+          Major Test
+        </h3>
+        <p>
+          बड़े र की परी ा की तैयारी और
+के िलए ।          syllabus assessment Major Test
+        </p>
+        <a
+          class="btn btn-primary"
+          href="#">
+जोड़          Test Link 
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- RESULTS -->
+<section class="results" id="results">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        Performance
+      </div>
+      <h2>
+        Results & Progress
+      </h2>
+      <p>
+        िव ािथयों के परणाम और उपल यों
+        को यहाँ दिशत िकया जा सकता है।
+      </p>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <strong>
+          Weekly
+        </strong>
+        <span>
+          Mock Test
+        </span>
+      </div>
+      <div class="stat">
+        <strong>
+          Major
+        </strong>
+        <span>
+          Test Series
+        </span>
+      </div>
+      <div class="stat">
+        <strong>
+          Free
+        </strong>
+        <span>
+          Live Classes
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CTA -->
+<section>
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h3>
+          तैयारी शु करने के िलए तैयार ह?
+        </h3>
+        <p>
+से जुड़          Prasthanam Foundation 
+          और अपनी तैयारी को िनयिमत बनाएं।
+        </p>
+      </div>
+      <a
+        class="btn btn-primary"
+        href="tel:8756912612">
+📞         8756912612
+      </a>
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        Get In Touch
+      </div>
+      <h2>
+        संपक कर
+      </h2>
+      <p>
+से जुड़ने        Prasthanam Foundation 
+        या जानकारी के िलए संपक कर।
+      </p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>
+          Foundation Details
+        </h3>
+        <div class="contact-item">
+          <div class="contact-icon">
+👤            
+          </div>
+          <div>
+            <strong>
+              संपक 
+            </strong>
+            Kundan Yadav
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+📍            
+          </div>
+          <div>
+            <strong>
+              पता
+            </strong>
+            Faridabad, Molnapur,
+            Azamgarh, Uttar Pradesh
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+📞            
+          </div>
+          <div>
+            <strong>
+              मोबाइल
+            </strong>
+            <a href="tel:8756912612">
+              8756912612
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <h3>
+          Quick Contact
+        </h3>
+        <p style="margin:10px 0 20px;color:#68758a">
+          Live Class, Study Material,
+या से संबंिधत जानकारी          Notes Test 
+          के िलए सीधे संपक कर।
+        </p>
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="tel:8756912612">
+📞             Call
+          </a>
+          <a
+            class="btn"
+            style="background:#eaf3ff;color:#1265aa"
+            href="https://wa.me/918756912612"
+            target="_blank">
+💬             WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>
+          Prasthanam Foundation
+        </h3>
+        <p>
+          िश ा, तैयारी और सफलता की िदशा
+          म एक शैि क पहल।
+        </p>
+      </div>
+      <div>
+        <h3>
+          Quick Links
+        </h3>
+        <a href="#about">
+          About
+        </a>
+        <a href="#classes">
+          Classes & Resources
+        </a>
+        <a href="#tests">
+          Mock Tests
+        </a>
+        <a href="#results">
+          Results
+        </a>
+      </div>
+      <div>
+        <h3>
+          Contact
+        </h3>
+        <p>
+          Kundan Yadav
+        </p>
+        <p>
+          8756912612
+        </p>
+        <p>
+          Faridabad, Molnapur, Azamgarh
+        </p>
+      </div>
+    </div>
+    <div class="copy">
+      © <span id="year"></span>
+      Prasthanam Foundation.
+      All Rights Reserved.
+    </div>
+  </div>
+</footer>
+<!-- WHATSAPP BUTTON -->
+<a
+  class="whatsapp"
+  href="https://wa.me/918756912612"
+  target="_blank"
+  aria-label="WhatsApp">
+💬  
+</a>
+<script>
+function toggleMenu(){
+  document
+    .getElementById('navLinks')
+    .classList
+    .toggle('show');
+}
+document
+  .querySelectorAll('.nav-links a')
+  .forEach(a => {
+    a.addEventListener('click', () => {
+      document
+        .getElementById('navLinks')
+        .classList
+        .remove('show');
+    });
+  });
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+</script>
+</body>
+</html>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
